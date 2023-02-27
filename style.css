@@ -7,5 +7,83 @@
 }
 
 body{
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    background-color: azure;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    /* border: 1px solid black; */
+    width: 500px;
+    margin: 50px 300px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: violet;
+}
+
+.container h1 {
+    font-size: 20px;
+    color: blue;
+    margin: 17px 0px;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.container input{
+    margin-bottom: 10px;
+    width: 300px;
+    align-content: center;
+    align-self: center;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 21px;
+    text-align: center;
+}
+
+.container input::placeholder{
+    color: lightgrey;
+    font-size: 17px;
+}
+
+#calculate{
+    margin-top: 15px;
+    width: 100px;
+    align-self: center;
+    font-size: 17px;
+    padding: 10px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calculate:hover{
+    scale: 1.1;
+}
+
+.container .result {
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 1280px){
+    body{
+        background-color: violet;
+    }
+    .container {
+        width: 100%;
+        margin: 120px 0 0 0;
+        padding: 0;
+        border-radius: 0;
+    }
+}
+
